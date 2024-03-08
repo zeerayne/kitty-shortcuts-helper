@@ -117,7 +117,7 @@ if args.backup:
     with open(os.path.join(
         config_directory, f"{config_file_name}.{time.time()}.backup"), "w"
     ) as f:
-        f.writelines(new_lines)
+        f.writelines(lines)
 # write new config file
 with open(config_file_path, "w") as f:
     f.writelines(new_lines)
